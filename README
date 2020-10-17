@@ -1,0 +1,32 @@
+## Introduction
+
+The code files in this repository are examples of using bash scripts to accomplish  simple tasks.  The files here will be augmented as I write more examples.
+
+
+## Files
+
+
+1. school.sh
+   -This file calculate the average assessed value of properties in the "MADISON SCHOOLS" district and outputs it to the command line. The original data can be downloaded at "https://data-cityofmadison.opendata.arcgis.com/datasets/property-tax-roll 
+
+
+2. digits.sh
+   -This file counts how many of the numbers between 1000 and 2000 (inclusive) that contain 2 in one or more of their digits
+
+3. ten_dirs.sh
+   -This file creates a directory "ten" and then populates it with ten subdirectories "ten/dir01", "ten/dir02",...  Each of those subdirectories is then populated with four txt files: file1.txt, file2.txt, file3.txt, and file4.txt.  file1.txt has one line consisting of the digit 1, file2.txt has two lines, each consisting of the digit 2, etc.
+
+4. rm_n.sh
+   -usage: rm_n.sh <dir> <n>
+   -Removes every file in <dir> that is larger than <n> bytes
+
+5. mean,sh
+   -usage: mean.sh <column> [file.csv]
+   -A generalization of school.sh, this file calculates the average value of the column number <column> in [file.csv]
+   -<column> must be a positive integer and the referenced column must be numeric
+   -Also allows for the file to be passed in via a pipe: "cat mtcars.csv | mean.sh 3"
+
+
+
+
+
